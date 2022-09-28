@@ -1,4 +1,4 @@
-# AMWA INFO-004: NMOS Implementation Guide for DNS-SD
+# AMWA INFO-00x: NMOS Implementation Guide for NMOS Control Framework
 
 [![Lint Status](https://github.com/AMWA-TV/info-004/workflows/Lint/badge.svg)](https://github.com/AMWA-TV/info-004/actions?query=workflow%3ALint)
 [![Render Status](https://github.com/AMWA-TV/info-004/workflows/Render/badge.svg)](https://github.com/AMWA-TV/info-004/actions?query=workflow%3ARender)
@@ -9,21 +9,18 @@ This repository holds the source for this Implementation Guide, part of the fami
 
 ### What does it do?
 
-- Explains the use of DNS-SD in NMOS environments.
-- Provides a practical "how-to" example of how to set up a BIND9 DNS server for NMOS use.
-- Gives example configurations for other DNS servers.
+- Explains the use of NMOS Control Frameworkin NMOS environments.
+- Provides practical "how-to" example of how to set up an NMOS Controllable node 
+- Provides a "how-to" use an NMOS Controler to interact with an NMOS Controllable node.
 
 ### Why does it matter?
 
-- DNS Service Discovery (DNS-SD) provides a simple and flexible method to discover NMOS Registration and Discovery Server (RDS) Services.
-- The NMOS RDS provides information about NMOS nodes, devices, and APIs. There must be a common way to locate the RDS in order for an NMOS component to register itself for discovery by other NMOS components.
+- Many NMOS Users would like to control NMOS nodes using open specifications and within an overall NMOS environment.
+- NMOS vendors would like to have the ability to extend control features in a way that highlights capabilities of their device while offereing a path towward interopberability and adoption of their specifications by the wider AMWA community.
 
 ### How does it work?
 
-The example add records to a BIND9 DNS server such that the server responds to standardized queries with information that indicates:
-
-- The fact that the DNS server provides Service Discovery
-- Where the NMOS RDS may be found on the network
+The NMOS Control Framework provides a new control endpoint discoverable by IS-04 along with specifications on a protoctol and model of controls using best practice current web based technologies such as webIDL, JSON, and websockets.
 
 <!-- INTRO-END -->
 
