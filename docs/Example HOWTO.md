@@ -16,11 +16,11 @@ The reader is assumed to have some experience with an NMOS infrastructure includ
 
 We hope you find this how-to guide to be useful.
 
-# HOWTO Steps
+## HOWTO Steps
 
 This HOWTO will present the steps:
 
-# Basic Installation
+### Basic Installation
 
 This section will do the most basic steps to get a NMOS Controllable Node running on your system. 
 
@@ -32,7 +32,7 @@ This section will do the most basic steps to get a NMOS Controllable Node runnin
 - Add subscription for notification on change to control parameter
 - Verify notification event received when parameter changes
 
-# Modifications to Basic Installation
+### Modifications to Basic Installation
 
 This section will make modifications to the basic system and show how to add in a parameter to one of the controls provided by the mock node.
 
@@ -41,7 +41,7 @@ This section will make modifications to the basic system and show how to add in 
 - Add subscription notification to the new parameter
 - Modify the parameter and verify notification received
 
-# Addition of Custom Control
+### Addition of Custom Control
 
 This section will make modifications to the basic system and show how to add in a new control to the mock node.  It will use a realistic control point that will check the status of network connections and return some statistics about these interfaces. It will also allow clearing the packet counters on the interfaces.
 
@@ -55,16 +55,13 @@ This section will make modifications to the basic system and show how to add in 
 - Verify statistics provided by the new controller are correct
 
 
-
-
-
-### Installing Mock NMOS Control Device
+## Installing Mock NMOS Control Device
 
 
 ...
 
 
-#Recap of HOWTO
+## Recap of HOWTO
 
 This HOWTO has shown how to add controllability to an NMOS node using the NMOS Control Framework. ...
 
